@@ -1,250 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flyingBike -  flying Experience</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>John Lester Gwapo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>flyhigh</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Experience the Ultimate Ride</h1>
-                <p>para lng sa mga bigo para pag lupad tiguk</p>
-                <a href="#products" class="btn">Explore Models  na basi babaye nmn inyo BIKE nga model huh d babaye</a>
+        <form id="registrationForm">
+            <h2>Western Instute of Technology  </h2>
+            <h2>Student Registration Form</h2>
+            <h3>fill in this form to register</h3>
+            
+            <div class="form-group">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                <span class="error" id="firstNameError"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="products" class="product-section">
-        <div class="container">
-            <h2 class="section-title">Our Flagship Model</h2>
-            <div class="product-showcase">
-                <div class="product-image">
-                    <img src="5916a79e77ed02f8e85161073c4fd7e3 (1).jpg" alt="flyingBike1000cc">
-                   
-                </div>
-                <div class="product-details">
-                    <h3 class="product-name">FlyingBike1000cc</h3>
-                    <div class="product-price">$5billion.</div>
-                    <div class="product-description">
-                        <p>The FlyingBike1000cc is our premium flyingbike designed for fylying the most dangerous bike:</p>
-                        <ul>
-                            <li>Lightweight carbon fiber frame (only 1.5kg total weight)</li>
-                            <li>Full suspension with 160mm travel</li>
-                            <li>Hydraulic disc brakes for superior stopping power</li>
-                            <li>500-speed Shimano drivetrain</li>
-                            <li>racket promax10000</li>
-                            <li>Adjustable seat post for quick position changes</li>
-                        </ul>
-                        <p>Available in three sizes: Medium, Large, and X-Large</p>
-                    </div>
-                    <button class="btn add-to-cart">Add to Cart na kis a lng ni</button>
-                </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                <span class="error" id="lastNameError"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="reviews-section">
-        <div class="container">
-            <h2 class="section-title">Customer Reviews</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"The flyingBike Pro1000cc completely transformed and have super speed. and i feel i can run from cops."</p>
-                    <p class="reviewer">- john micheal ., Professional flyingBiker</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="review-text">"Worth every penny! The wings frame makes climbing hills so much easier, and it me confidence to steal money from bank because i know even jetpllane cant catch my speed nyahaha."</p>
-                    <p class="reviewer">- froi razonable., atomic fart</p>
-                </div>
-                <div class="review-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">"After testing dozens of high-end bikes, I chose the flyingBike1000cc for this . i win all race because i can fly like butterfly kya!"</p>
-                    <p class="reviewer">- james obcianal., Ultimatepoop</p>
-                </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                <span class="error" id="emailError"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="faqs" class="faqs-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What warranty comes with flyingBike products?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>All flyingBike frames come with a lifetime warranty against manufacturing defects. Components are covered by a 2-year warranty. We also offer a 30-day satisfaction guarantee.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you ship internationally?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>ikw kuha kay ga lupad mani.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I determine the right bike size for me?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>d kana mag bakal kung putot ka.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Can I customize components on my flyingBike?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely! no isli isli bala kay bakol kuna simo.</p>
-                    </div>
-                </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+                <span class="error" id="dobError"></span>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Contact me mwah</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>flying bike avenue ikw ma bakal ngita a</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>09618082928</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>lestertupas@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <p>24/7 hindi to na tutulog boy</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
+            
+            <div class="form-group">
+                <label for="username">Set Username <span class="required">*</span></label>
+                <input type="text" id="username" name="username" placeholder="Select a unique username" required>
+                <span class="error" id="usernameError"></span>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>flyingBike</h2>
-                    <p>Premium flying experiences since 5000</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+            
+            <div class="form-group">
+                <label for="password">Set Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+                <span class="error" id="passwordError"></span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025flyingingBike. All Rights Reserved.</p>
+            
+            <div class="form-group">
+                <label>Gender <span class="required">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" name="gender" value="Others">
+                    <label for="others">Others/Prefer Not to Say</label>
+                </div>
+                <span class="error" id="genderError"></span>
             </div>
-        </div>
-    </footer>
-
-    <script>
-        // Simple FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const toggle = question.querySelector('.faq-toggle');
-                
-                if (answer.style.maxHeight) {
-                    answer.style.maxHeight = null;
-                    toggle.textContent = '+';
-                } else {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    toggle.textContent = '-';
-                }
-            });
-        });
-    </script>
+            
+            <div class="form-group">
+                <label for="course">Select Academic Program <span class="required">*</span></label>
+                <select id="course" name="course" required>
+                    <option value="">Choose Your Program</option>
+                    <option value="Computer Science">Bachelor of Science in Computer Science</option>
+                    <option value="Software Engineering">Bachelor of Science in Software Engineering</option>
+                    <option value="Cybersecurity">Bachelor of Information Technology</option>
+                    <option value="Data Science">Bachelor of Science in Data Science</option>
+                    <option value="Network Engineering">Bachelor of Science in Network Engineering</option>
+                    <option value="Digital Media">Bachelor of Arts in Digital Media</option>
+                   >
+                </select>
+                <span class="error" id="courseError"></span>
+            </div>
+            
+          
+            
+            <button type="submit" class="register-btn">Complete Registration</button>
+      
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
